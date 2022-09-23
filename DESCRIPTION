@@ -2,7 +2,7 @@ Package: airsafety
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "your@email.com", role = c("aut", "cre"))
+    person("Josephine", "Valensia", , "jval0011@student.monash.edu", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -10,7 +10,18 @@ Language: es
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 Imports: 
-    magrittr
+    dplyr,
+    magrittr,
+    tidyr,
+    stringr,
+    purrr,
+    shiny,
+    ggplot2,
+    plotly,
+    htmltools,
+    DT
+Suggestions:
+    bslib
 Depends: 
     R (>= 2.10)
 LazyData: true
