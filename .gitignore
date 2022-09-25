@@ -1,2 +1,5 @@
 .Rproj.user
 .DSstore
+.Rhistory
+.RData
+inst/doc

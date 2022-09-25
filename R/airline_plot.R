@@ -1,14 +1,22 @@
+#' Airline Plot
+#'
+#' @description
+#' Create interactive bar plot comparing number of accidents in two different
+#' range of year of an airline based on the input of the selected type of events.
+#'
+#' @param input_aero Shiny user-interface input
+#' @param input_event Shiny user-interface input
+#'
 #' @import plotly
 #' @import ggplot2
 #' @import dplyr
 #' @import shiny
 #'
-#' @param input_aero An unquoted variable name
-#' @param input_event An unquoted variable name
-#'
 #' @export
 
 airline_plot <- function(input_aero, input_event) {
+
+  airline <- year_range <- type_of_event <- n_events <- NULL
 
   air <- airsafety::safetydata
 

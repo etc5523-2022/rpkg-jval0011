@@ -1,7 +1,7 @@
-#' Airline Rating
+#' Airline Rating0
 #'
 #' @description
-#' State the rating an airline out of the 56 listed in the safetydata based on the input.
+#' Calculate the rating an airline out of the 56 listed in the safetydata based on the input.
 #'
 #' @param name an airline name listed in the safetydata, typed in both lowercase or uppercase is acceptable
 #'
@@ -15,8 +15,8 @@
 #' @import tidyr
 #'
 #' @export
-
-airline_rating <- function(name){
+#'
+airline_rating0 <- function(name){
 
   airline <- NULL
 
@@ -32,13 +32,10 @@ airline_rating <- function(name){
   } else if(name %in% air_rate$airline){
     air_name <- air_rate %>%
       filter(airline == name)
-    paste0(toupper(air_name$airline), " has rating of ", air_name$rating, " / 5!")
+    as.numeric(air_name$rating)
   } else {
     paste0("Sorry we do not have the data for this airline!")
   }
 
 
 }
-
-
-

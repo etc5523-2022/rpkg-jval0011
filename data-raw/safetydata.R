@@ -1,5 +1,7 @@
-#' @import dplyr
-#' @import stringr
+# code to clean safetydata
+
+library(dplyr)
+library(stringr)
 
 URL <- "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-08-07/week19_airline_safety.csv"
 

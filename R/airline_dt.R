@@ -1,12 +1,21 @@
+#' Rating DataTable
+#'
+#' @description
+#' Create interactive Data Table of Airlines based on the rating input by the user.
+#'
+#' @param input_rate Shiny user-interface input
+#'
+#' @return A DataTable with 2 columns : Airline Name and Tail Logo
+#'
 #' @import dplyr
 #' @import shiny
 #' @import DT
 #'
-#' @param input_aero An unquoted variable name
-#'
 #' @export
 
 airline_dt <- function(input_rate){
+
+ pictags <- airline <- rating <- NULL
 
   air <- airsafety::safetydata
 

@@ -1,0 +1,79 @@
+---
+title: "Introduction to Airsafety Package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Airsafety Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# What is `Airsafety` package?
+
+`Airsafety` package contains the airline safety data and includes a Shiny Application for user to interactively learn more about safety of airlines around the world.
+
+This vignette will show you how to access the app and check the rating of the airlines using the `Airsafety` package.
+
+
+## How to use `Airsafety` package?
+
+First, load/download the `Airsafety` package!
+
+```{r setup, message=FALSE, warning=FALSE}
+# devtools::install_github("etc5523-2022/rpkg-jval0011")
+library(airsafety)
+```
+
+Next you can access the airline safety data, shiny app and the rating functions with the following steps:
+
+### Access the Airline Safety Data
+
+The `Airsafety` package includes a built-in dataset `safetydata`, a data frame with **336 rows** and **5 variables**. Below is a glimpse of the data set:
+
+```{r safetydata, message=FALSE, warning=FALSE}
+library(dplyr)
+glimpse(safetydata)
+```
+
+More details about this dataset can be found by using the function `help(safetydata)`
+
+### Run the Shiny Application
+
+To run the shiny application, with the following code:
+
+```{r ratingapp, eval = FALSE}
+rating_app()
+```
+
+More information about how to use the app can be found at the **about** section of the application.
+
+### Check Rating of An Airline
+
+Without running the Shiny Application, you can also check the rating of the airlines using the functions in the `Airsafety` package. *Please note only the 56 airlines listed in the built-in data set* `safetydata` *are rated for the airline safety.*
+
+- `airline_rating0()` : calculate the rating
+
+```{r airrate0}
+airline_rating0("Qantas")
+```
+For more details : `help(airline_rating0)`
+
+<br>
+
+- `airline_rating0()` : state the rating in sentence
+
+```{r airrate}
+airline_rating("Qantas")
+```
+For more details : `help(airline_rating)`
+
+# Further Information
+
+For more information about the functions mentioned above and the functions use in the Shiny Application included in the `Airsafety` package, please refer to the [pkgdown]() site.
+

@@ -54,7 +54,7 @@ ui <- fluidPage(
                      fluidRow(
                        column(8,
                               br(),
-                              h1(textOutput("aeroname1"))),
+                              h2(textOutput("aeroname1"))),
                        column(4, uiOutput("aeropic1"))
                      ),
                      plotlyOutput("incPlot1"),
@@ -67,7 +67,7 @@ ui <- fluidPage(
                      fluidRow(
                        column(8,
                               br(),
-                              h1(textOutput("aeroname2"))),
+                              h2(textOutput("aeroname2"))),
                        column(4, uiOutput("aeropic2"))
                      ),
                      plotlyOutput("incPlot2"),

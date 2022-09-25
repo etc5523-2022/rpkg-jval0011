@@ -1,22 +1,29 @@
+#' Safetydata with Ratings and Logo
+#'
+#' @description
+#' Transform the airesafety::safetydata dataset into wide-format and add new
+#' columns to calculate rating and add urls for airline tail logo, creating
+#' a modified dataset with 56 rows and 14 variables.
+#'
+#' @param data airsafety::safetydata dataset
+#'
 #' @import dplyr
 #' @import magrittr
 #' @import tidyr
 #' @import purrr
 #' @import shiny
 #'
-#' @param x An unquoted variable name
-#'
 #' @export
 
 
-safetydata_ratePic <- function(x){
+safetydata_ratePic <- function(data){
 
   year_range <- type_of_event <- n_events <- incident1 <- fatal_accidents1 <-
     fatalities1 <- incidents2 <- fatal_accidents2 <- fatalities2 <- tot <-
-    tot_rate <- avail_seat_km_per_week <- airline <- rating <- NULL
+    tot_rate <- avail_seat_km_per_week <- airline <- rating <- logo <- NULL
 
 
-  air_rate <- x %>%
+  air_rate <- data %>%
     pivot_wider(names_from = c(year_range, type_of_event),
                 values_from = n_events) %>%
     mutate(across(.cols=3:8, .fns=as.numeric)) %>%
