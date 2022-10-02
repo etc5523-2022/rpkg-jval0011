@@ -75,5 +75,5 @@ For more details : `help(airline_rating)`
 
 ## Further Information
 
-For more information about the functions mentioned above and the functions use in the Shiny Application included in the `airsafety` package, please refer to the [pkgdown]() site.
+For more information about the functions mentioned above and the functions use in the Shiny Application included in the `airsafety` package, please refer to the [pkgdown](https://etc5523-2022.github.io/rpkg-jval0011/) site.
 

@@ -109,4 +109,4 @@ For more details : `help(airline_rating)`
 
 ## Want to know more about the package?
 
-Visit the `airsafety` [pkgdown website](https://github.com/etc5523-2022/rpkg-jval0011) or the for more information on the functions in this package.
+Visit the `airsafety` [pkgdown website](https://etc5523-2022.github.io/rpkg-jval0011/) or the for more information on the functions in this package.
