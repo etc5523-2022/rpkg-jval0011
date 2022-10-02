@@ -3,3 +3,28 @@ template:
   bootstrap: 5
   bootswatch: minty
 
+reference:
+- title: Dataset
+  desc: >
+    Built-in dataset
+- contents:
+  - safetydata
+- title: Airline Safety R Shiny Application
+  desc: >
+    Launch the embedded R Shiny application about Airline Safety and its rating
+- contents:
+  - rating_app
+- title: Rating of Airlines
+  desc: >
+    Functions to calculate and state an airline's safety rating
+- contents:
+  - airline_rating0
+  - airline_rating
+- title: Funtions in R Shiny Application
+  desc: >
+    Functions to create plots, DT datatable and modify dataset, used in R Shiny Application embedded in this package
+- contents:
+  - airline_dt
+  - airline_pic
+  - airline_plot
+  - safetydata_ratePic

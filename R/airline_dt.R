@@ -9,7 +9,7 @@
 #'
 #' @import dplyr
 #' @import shiny
-#' @import DT
+#' @importFrom DT datatable
 #'
 #' @export
 

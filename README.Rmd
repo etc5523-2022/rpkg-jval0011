@@ -1,5 +1,6 @@
 ---
 output: github_document
+always_allow_html: true
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -11,8 +12,6 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
-library(tibble)
-library(kableExtra)
 ```
 
 # airsafety
@@ -35,15 +34,18 @@ devtools::install_github("etc5523-2022/rpkg-jval0011")
 
 Load the `Airsafety` package!
 
-```{r example}
+```{r example, warning=FALSE}
 library(airsafety)
 ```
 
 ## Functions
 
-```{r}
-tibble("Function" = c("safetydata", "ratingapp()", "airline_rating0()", 
-                      "airline_rating()"),
+```{r echo=FALSE}
+library(tibble)
+library(kableExtra)
+
+tibble("Function" = c("safetydata", "ratingapp ( )", "airline_rating0 ( )", 
+                      "airline_rating ( )"),
        "Description" = c("Access the airline safety data", 
                          "Run the R Shiny application", 
                          "Calculate rating of an airline", 
@@ -53,8 +55,58 @@ tibble("Function" = c("safetydata", "ratingapp()", "airline_rating0()",
                 bootstrap_options = c("striped", "hover", "condensed"))
 ```
 
-Note : some functions not mentioned above included in the package are for the embedded R Shiny application purposes. Please refer to the section **"Want to know more about the package?"**
+Note : some functions not mentioned above included in the package are for the embedded R Shiny application purposes. Please refer to the link in section : **"Want to know more about the package?"**
+
+<br>
+<br>
+
+### `safetydata` : Access the Airline Safety Data
+
+The `airsafety` package includes a built-in dataset `safetydata`, a data frame with **336 rows** and **5 variables**. Below is a glimpse of the data set:
+
+```{r safetydata, message=FALSE, warning=FALSE}
+library(dplyr)
+glimpse(safetydata)
+```
+
+More details about this dataset can be found by using the function `help(safetydata)`
+
+<br>
+
+### `rating_app()` : Run the R Shiny Application
+
+To run the R shiny application, with the following code:
+
+```{r ratingapp, eval = FALSE}
+rating_app()
+```
+
+More information about how to use the app can be found at the **about** section of the application.
+
+<br>
+
+### `airline_rating0()`& `airline_rating()` : Check Rating of An Airline
+
+Without running the Shiny Application, you can also check the rating of the airlines using the functions in the `airsafety` package. *Please note only the 56 airlines listed in the built-in data set* `safetydata` *are rated for the airline safety.*
+
+- `airline_rating0()` : calculate the rating
+
+```{r airrate0}
+airline_rating0("Qantas")
+```
+For more details : `help(airline_rating0)`
+
+<br>
+
+- `airline_rating()` : state the rating in sentence
+
+```{r airrate}
+airline_rating("Qantas")
+```
+For more details : `help(airline_rating)`
+
+<br>
 
 ## Want to know more about the package?
 
-Visit the `airsafety` [pkgdown website]() or the for more information on the functions in this package.
+Visit the `airsafety` [pkgdown website](https://github.com/etc5523-2022/rpkg-jval0011) or the for more information on the functions in this package.

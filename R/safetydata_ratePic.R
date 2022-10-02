@@ -8,10 +8,8 @@
 #' @param data airsafety::safetydata dataset
 #'
 #' @import dplyr
-#' @import magrittr
-#' @import tidyr
-#' @import purrr
-#' @import shiny
+#' @importFrom magrittr %>%
+#' @importFrom tidyr pivot_wider
 #'
 #' @export
 

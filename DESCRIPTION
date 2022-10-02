@@ -13,8 +13,6 @@ Imports:
     dplyr,
     magrittr,
     tidyr,
-    stringr,
-    purrr,
     shiny,
     ggplot2,
     plotly,

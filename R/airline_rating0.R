@@ -12,7 +12,6 @@
 #'
 #' @import dplyr
 #' @import magrittr
-#' @import tidyr
 #'
 #' @export
 #'

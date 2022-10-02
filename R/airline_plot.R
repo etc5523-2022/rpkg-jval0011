@@ -7,7 +7,7 @@
 #' @param input_aero Shiny user-interface input
 #' @param input_event Shiny user-interface input
 #'
-#' @import plotly
+#' @importFrom  plotly ggplotly
 #' @import ggplot2
 #' @import dplyr
 #' @import shiny
