@@ -3,12 +3,12 @@
 #' @description
 #' Calculate the rating an airline out of the 56 listed in the safetydata based on the input.
 #'
-#' @param name an airline name listed in the safetydata, typed in both lowercase or uppercase is acceptable
+#' @param name an airline name listed in the safetydata, typed in both lowercase or uppercase, even mixed, is acceptable
 #'
 #' @examples
 #' airline_rating("All Nippon Airways")
 #' airline_rating("QANTAS")
-#' airline_rating("garuda indonesia")
+#' airline_rating("garuda inDOnesia")
 #'
 #' @import dplyr
 #' @import magrittr
@@ -16,7 +16,7 @@
 #'
 #' @export
 #'
-airline_rating0 <- function(name){
+airline_rating0 <- function(name = NULL){
 
   airline <- NULL
 

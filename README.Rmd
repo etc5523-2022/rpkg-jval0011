@@ -11,6 +11,8 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
+library(tibble)
+library(kableExtra)
 ```
 
 # airsafety
@@ -18,7 +20,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of airsafety is to ...
+The goal of `airsafety` package is to share information about airline safety information with embedded interactive R Shiny application and functions where user can easily calculate rating of an airline based on its safety records.
 
 ## Installation
 
@@ -29,26 +31,30 @@ You can install the development version of airsafety from [GitHub](https://githu
 devtools::install_github("etc5523-2022/rpkg-jval0011")
 ```
 
-## Example
+## How to use `airsafety` package?
 
-This is a basic example which shows you how to solve a common problem:
+Load the `Airsafety` package!
 
 ```{r example}
 library(airsafety)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+## Functions
 
-```{r cars}
-summary(cars)
+```{r}
+tibble("Function" = c("safetydata", "ratingapp()", "airline_rating0()", 
+                      "airline_rating()"),
+       "Description" = c("Access the airline safety data", 
+                         "Run the R Shiny application", 
+                         "Calculate rating of an airline", 
+                         "State rating of an airline")) %>%
+  kable() %>%
+  kable_styling(full_width = F, 
+                bootstrap_options = c("striped", "hover", "condensed"))
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
+Note : some functions not mentioned above included in the package are for the embedded R Shiny application purposes. Please refer to the section **"Want to know more about the package?"**
 
-You can also embed plots, for example:
+## Want to know more about the package?
 
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+Visit the `airsafety` [pkgdown website]() or the for more information on the functions in this package.

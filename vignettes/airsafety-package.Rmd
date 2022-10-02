@@ -14,14 +14,14 @@ knitr::opts_chunk$set(
 )
 ```
 
-# What is `Airsafety` package?
+# What is `airsafety` package?
 
 `Airsafety` package contains the airline safety data and includes a Shiny Application for user to interactively learn more about safety of airlines around the world.
 
-This vignette will show you how to access the app and check the rating of the airlines using the `Airsafety` package.
+This vignette will show you how to access the app and check the rating of the airlines using the `airsafety` package.
 
 
-## How to use `Airsafety` package?
+## How to use `airsafety` package?
 
 First, load/download the `Airsafety` package!
 
@@ -34,7 +34,7 @@ Next you can access the airline safety data, shiny app and the rating functions 
 
 ### Access the Airline Safety Data
 
-The `Airsafety` package includes a built-in dataset `safetydata`, a data frame with **336 rows** and **5 variables**. Below is a glimpse of the data set:
+The `airsafety` package includes a built-in dataset `safetydata`, a data frame with **336 rows** and **5 variables**. Below is a glimpse of the data set:
 
 ```{r safetydata, message=FALSE, warning=FALSE}
 library(dplyr)
@@ -43,9 +43,9 @@ glimpse(safetydata)
 
 More details about this dataset can be found by using the function `help(safetydata)`
 
-### Run the Shiny Application
+### Run the R Shiny Application
 
-To run the shiny application, with the following code:
+To run the R shiny application, with the following code:
 
 ```{r ratingapp, eval = FALSE}
 rating_app()
@@ -55,7 +55,7 @@ More information about how to use the app can be found at the **about** section 
 
 ### Check Rating of An Airline
 
-Without running the Shiny Application, you can also check the rating of the airlines using the functions in the `Airsafety` package. *Please note only the 56 airlines listed in the built-in data set* `safetydata` *are rated for the airline safety.*
+Without running the Shiny Application, you can also check the rating of the airlines using the functions in the `airsafety` package. *Please note only the 56 airlines listed in the built-in data set* `safetydata` *are rated for the airline safety.*
 
 - `airline_rating0()` : calculate the rating
 
@@ -66,14 +66,14 @@ For more details : `help(airline_rating0)`
 
 <br>
 
-- `airline_rating0()` : state the rating in sentence
+- `airline_rating()` : state the rating in sentence
 
 ```{r airrate}
 airline_rating("Qantas")
 ```
 For more details : `help(airline_rating)`
 
-# Further Information
+## Further Information
 
-For more information about the functions mentioned above and the functions use in the Shiny Application included in the `Airsafety` package, please refer to the [pkgdown]() site.
+For more information about the functions mentioned above and the functions use in the Shiny Application included in the `airsafety` package, please refer to the [pkgdown]() site.
 
