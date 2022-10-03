@@ -1,0 +1,196 @@
+---
+pagetitle: "airsafety R Package"
+author: Josephine Valensia
+format: 
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+    footer: "ETC5523 R-Package Assessment"
+    theme: dark
+    transition: slide
+    touch: true
+    controls: true
+execute:
+  echo: false
+---
+
+# [`r rmarkdown::metadata$pagetitle`]{style="color:black;"} {#title-slide background-color="rgb(162,228,184)"}{transition="fade-in slide-out"}
+
+<center>
+![](image.jpg){.center width="500" height="300"}
+</center>
+
+
+## ✈️ What is `airsafety` package?
+
+. . . 
+
+<br>
+
+`Airsafety` package contains the airline safety data, rating functions and includes a Shiny Application for user to interactively learn more about safety of airlines around the world.
+
+## ✈️ How to use `airsafety` package?
+
+. . . 
+
+<br>
+
+First, load/download the `Airsafety` package!
+
+. . . 
+
+```{r setup, echo=TRUE}
+# devtools::install_github("etc5523-2022/rpkg-jval0011")
+library(airsafety)
+```
+
+## ✈️ Access the Airline Safety Data {.smaller}
+
+. . . 
+
+<br>
+
+The `airsafety` package includes a built-in dataset `safetydata`, a data frame with **336 rows** and **5 variables**. Below is a glimpse of the data set:
+
+. . . 
+
+<br>
+
+```{r safetydata, message=FALSE, warning=FALSE, echo=TRUE}
+library(dplyr)
+glimpse(safetydata)
+```
+
+. . . 
+
+<br><br>
+
+More details : `help(safetydata)`
+
+## ✈️ Run the R Shiny Application
+
+. . . 
+
+<br>
+
+To run the R shiny application, with the following code:
+
+. . . 
+
+<br>
+
+```{r ratingapp, eval = FALSE, echo=TRUE}
+rating_app()
+```
+
+## ✈️ Run the R Shiny Application
+
+<center>
+<iframe data-src="https://di27wi-josephine-valensia.shinyapps.io/shiny--jval0011/" width="1200" height="600">
+</iframe>
+</center>
+
+## ✈️ Check Rating of An Airline
+
+. . . 
+
+<br>
+
+Without running the Shiny Application, you can also check the rating of the airlines using the functions in the `airsafety` package. 
+
+<br>
+
+<i class="fa-solid fa-triangle-exclamation"></i>️ *Please note only the 56 airlines listed in the built-in data set* `safetydata` *are rated for the airline safety.*
+
+---
+
+### ✈️ Check Rating of An Airline - `airline_rating0()` {.smaller}
+
+. . . 
+
+<br>
+
+- `airline_rating0()` : calculate the rating
+
+. . . 
+
+```{r airrate01, echo=TRUE}
+airline_rating0("Qantas")
+```
+
+. . . 
+
+```{r airrate02, echo=TRUE}
+airline_rating0("garuda indonesia")
+```
+
+. . . 
+
+```{r airrate03, echo=TRUE}
+# The correct airline name is All Nippon Airways"
+airline_rating0("all nippon airlines")
+```
+. . . 
+
+<br>
+
+For more details : `help(airline_rating0)`
+
+---
+
+### ✈️ Check Rating of An Airline - `airline_rating()` {.smaller}
+
+. . . 
+
+<br>
+
+- `airline_rating()` : state the rating in sentence
+
+. . . 
+
+```{r airrate1, echo=TRUE}
+airline_rating("Qantas")
+```
+
+. . . 
+
+```{r airrate2, echo=TRUE}
+airline_rating("garuda indonesia")
+```
+
+. . . 
+
+```{r airrate3, echo=TRUE}
+# The correct airline name is All Nippon Airways
+airline_rating("all nippon airlines")
+```
+
+. . . 
+
+<br>
+
+For more details : `help(airline_rating)`
+
+---
+
+## Check out more information about `airsafety`✈️
+
+<script src="https://kit.fontawesome.com/b763e98bf5.js" crossorigin="anonymous"></script>
+
+<br><br>
+
+<i class="fa-brands fa-github"></i>
+[https://github.com/etc5523-2022/rpkg-jval0011](https://github.com/etc5523-2022/rpkg-jval0011)
+
+<br>
+
+<i class="fa-solid fa-link"></i>
+[https://etc5523-2022.github.io/rpkg-jval0011/](https://etc5523-2022.github.io/rpkg-jval0011/)
+
+<br>
+
+<i class="fa-solid fa-circle-exclamation"></i>
+[Report any issues!](https://github.com/etc5523-2022/rpkg-jval0011/issues)
+
+
+

@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 # What is `airsafety` package?
 
-`Airsafety` package contains the airline safety data and includes a Shiny Application for user to interactively learn more about safety of airlines around the world.
+`Airsafety` package contains the airline safety data, functions and includes a Shiny Application for user to interactively learn more about safety of airlines around the world.
 
 This vignette will show you how to access the app and check the rating of the airlines using the `airsafety` package.
 

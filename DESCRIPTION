@@ -1,9 +1,11 @@
 Package: airsafety
-Title: What the Package Does (One Line, Title Case)
+Title: What the Package Does
 Version: 0.0.0.9000
 Authors@R: 
     person("Josephine", "Valensia", , "jval0011@student.monash.edu", role = c("aut", "cre"))
 Description: Airsafety package contains the airline safety data and includes a Shiny Application for user to interactively learn more about safety of airlines around the world.
+URL: https://etc5523-2022.github.io/rpkg-jval0011/ , https://github.com/etc5523-2022/rpkg-jval0011 
+BugReports: https://github.com/etc5523-2022/rpkg-jval0011/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: es
