@@ -4,9 +4,18 @@
 \name{airsafety-package}
 \alias{airsafety}
 \alias{airsafety-package}
-\title{airsafety: What the Package Does (One Line, Title Case)}
+\title{airsafety: What the Package Does}
 \description{
 Airsafety package contains the airline safety data and includes a Shiny Application for user to interactively learn more about safety of airlines around the world.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://etc5523-2022.github.io/rpkg-jval0011/ }
+  \item \url{https://github.com/etc5523-2022/rpkg-jval0011}
+  \item Report bugs at \url{https://github.com/etc5523-2022/rpkg-jval0011/issues}
+}
+
 }
 \author{
 \strong{Maintainer}: Josephine Valensia \email{jval0011@student.monash.edu}

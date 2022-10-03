@@ -10,11 +10,12 @@ format:
     transition: slide
     touch: true
     controls: true
+    navigation-mode: linear
 execute:
   echo: false
 ---
 
-# [`r rmarkdown::metadata$pagetitle`]{style="color:black;"} {#title-slide background-color="rgb(162,228,184)"}{transition="fade-in slide-out"}
+# `r rmarkdown::metadata$pagetitle`
 
 <center>
 ![](image.jpg){.center width="500" height="300"}
