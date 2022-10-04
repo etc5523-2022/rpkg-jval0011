@@ -1,4 +1,4 @@
-#' State Airline Safety Rating
+#' Calculate Airline Safety Rating
 #'
 #' @description
 #' Calculate the rating an airline out of the 56 listed in the safetydata based on the input.
