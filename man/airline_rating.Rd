@@ -2,7 +2,7 @@
 % Please edit documentation in R/airline_rating.R
 \name{airline_rating}
 \alias{airline_rating}
-\title{Airline Safety Rating}
+\title{State Airline Safety Rating}
 \usage{
 airline_rating(name)
 }
