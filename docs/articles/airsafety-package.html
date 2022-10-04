@@ -49,7 +49,14 @@
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off">
 </form>
 
-      <ul class="navbar-nav"></ul>
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/etc5523-2022/rpkg-jval0011/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
 </div>
 
     
@@ -64,7 +71,7 @@
       <img src="" class="logo" alt=""><h1>Introduction to Airsafety Package</h1>
             
       
-      
+      <small class="dont-index">Source: <a href="https://github.com/etc5523-2022/rpkg-jval0011/blob/HEAD/vignettes/airsafety-package.Rmd" class="external-link"><code>vignettes/airsafety-package.Rmd</code></a></small>
       <div class="d-none name"><code>airsafety-package.Rmd</code></div>
     </div>
 
@@ -73,9 +80,9 @@
 <div class="section level2">
 <h2 id="what-is-airsafety-package">What is <code>airsafety</code> package?<a class="anchor" aria-label="anchor" href="#what-is-airsafety-package"></a>
 </h2>
-<p><code>Airsafety</code> package contains the airline safety data and
-includes a Shiny Application for user to interactively learn more about
-safety of airlines around the world.</p>
+<p><code>Airsafety</code> package contains the airline safety data,
+functions and includes a Shiny Application for user to interactively
+learn more about safety of airlines around the world.</p>
 <p>This vignette will show you how to access the app and check the
 rating of the airlines using the <code>airsafety</code> package.</p>
 <div class="section level3">
@@ -84,7 +91,7 @@ rating of the airlines using the <code>airsafety</code> package.</p>
 <p>First, load/download the <code>Airsafety</code> package!</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># devtools::install_github("etc5523-2022/rpkg-jval0011")</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">airsafety</span><span class="op">)</span></span></code></pre></div>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://etc5523-2022.github.io/rpkg-jval0011/" class="external-link">airsafety</a></span><span class="op">)</span></span></code></pre></div>
 <p>Next you can access the airline safety data, shiny app and the rating
 functions with the following steps:</p>
 <div class="section level4">
@@ -94,6 +101,8 @@ functions with the following steps:</p>
 <code>safetydata</code>, a data frame with <strong>336 rows</strong> and
 <strong>5 variables</strong>. Below is a glimpse of the data set:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">airsafety</span><span class="fu">::</span><span class="va"><a href="../reference/safetydata.html">safetydata</a></span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">safetydata</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Rows: 336</span></span>
@@ -110,7 +119,7 @@ functions with the following steps:</p>
 <h4 id="run-the-r-shiny-application">Run the R Shiny Application<a class="anchor" aria-label="anchor" href="#run-the-r-shiny-application"></a>
 </h4>
 <p>To run the R shiny application, with the following code:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/rating_app.html">rating_app</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>More information about how to use the app can be found at the
 <strong>about</strong> section of the application.</p>
@@ -127,7 +136,7 @@ safety.</em></p>
 <li>
 <code><a href="../reference/airline_rating0.html">airline_rating0()</a></code> : calculate the rating</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/airline_rating0.html">airline_rating0</a></span><span class="op">(</span><span class="st">"Qantas"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 5</span></span></code></pre></div>
 <p>For more details : <code><a href="../reference/airline_rating0.html">help(airline_rating0)</a></code></p>
@@ -136,7 +145,7 @@ safety.</em></p>
 <li>
 <code><a href="../reference/airline_rating.html">airline_rating()</a></code> : state the rating in sentence</li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/airline_rating.html">airline_rating</a></span><span class="op">(</span><span class="st">"Qantas"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "QANTAS has rating of 5 / 5!"</span></span></code></pre></div>
 <p>For more details : <code><a href="../reference/airline_rating.html">help(airline_rating)</a></code></p>
@@ -147,7 +156,8 @@ safety.</em></p>
 </h3>
 <p>For more information about the functions mentioned above and the
 functions use in the Shiny Application included in the
-<code>airsafety</code> package, please refer to the <a href="">pkgdown</a> site.</p>
+<code>airsafety</code> package, please refer to the <a href="https://etc5523-2022.github.io/rpkg-jval0011/" class="external-link">pkgdown</a>
+site.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
