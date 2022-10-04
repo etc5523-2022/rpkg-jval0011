@@ -57,9 +57,15 @@ The `airsafety` package includes a built-in dataset `safetydata`, a data frame w
 
 <br>
 
-```{r safetydata, message=FALSE, warning=FALSE, echo=TRUE}
-library(dplyr)
-glimpse(safetydata)
+```{r safetydata, message=FALSE, warning=FALSE, echo=TRUE, eval=FALSE}
+# access the dataset
+airsafety::safetydata
+```
+
+. . . 
+
+```{r safetydata1, echo=TRUE}
+dplyr::glimpse(safetydata)
 ```
 
 . . . 
