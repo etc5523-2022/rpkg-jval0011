@@ -82,13 +82,19 @@ Note : some functions not mentioned above included in the package are
 for the embedded R Shiny application purposes. Please refer to the link
 in section : **“Want to know more about the package?”**
 
-<br> <br>
+<br>
 
 ### `safetydata` : Access the Airline Safety Data
 
 The `airsafety` package includes a built-in dataset `safetydata`, a data
-frame with **336 rows** and **5 variables**. Below is a glimpse of the
-data set:
+frame with **336 rows** and **5 variables**.
+
+``` r
+# Access the dataset
+airsafety::safetydata
+```
+
+Below is a glimpse of the data set:
 
 ``` r
 library(dplyr)

@@ -1,4 +1,4 @@
-#' Rating App
+#' Airline Safety Rating R Shiny Application
 #'
 #' @description
 #' Run Airsafety Rating Shiny Application from inst/myapp directory

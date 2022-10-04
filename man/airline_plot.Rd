@@ -2,7 +2,7 @@
 % Please edit documentation in R/airline_plot.R
 \name{airline_plot}
 \alias{airline_plot}
-\title{Airline Plot}
+\title{Airline Incidents Bar Plot}
 \usage{
 airline_plot(input_aero, input_event)
 }

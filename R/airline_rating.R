@@ -1,4 +1,4 @@
-#' Airline Rating
+#' Airline Safety Rating
 #'
 #' @description
 #' State the rating an airline out of the 56 listed in the safetydata based on the input.

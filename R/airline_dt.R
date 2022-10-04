@@ -1,4 +1,4 @@
-#' Rating DataTable
+#' Airline Safety Rating DataTable
 #'
 #' @description
 #' Create interactive Data Table of Airlines based on the rating input by the user.

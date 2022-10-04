@@ -36,6 +36,10 @@ Next you can access the airline safety data, shiny app and the rating functions 
 
 The `airsafety` package includes a built-in dataset `safetydata`, a data frame with **336 rows** and **5 variables**. Below is a glimpse of the data set:
 
+```{r eval=FALSE}
+airsafety::safetydata
+```
+
 ```{r safetydata, message=FALSE, warning=FALSE}
 library(dplyr)
 glimpse(safetydata)

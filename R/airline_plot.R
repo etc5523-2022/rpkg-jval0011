@@ -1,4 +1,4 @@
-#' Airline Plot
+#' Airline Incidents Bar Plot
 #'
 #' @description
 #' Create interactive bar plot comparing number of accidents in two different

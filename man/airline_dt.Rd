@@ -2,7 +2,7 @@
 % Please edit documentation in R/airline_dt.R
 \name{airline_dt}
 \alias{airline_dt}
-\title{Rating DataTable}
+\title{Airline Safety Rating DataTable}
 \usage{
 airline_dt(input_rate)
 }

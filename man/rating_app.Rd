@@ -2,7 +2,7 @@
 % Please edit documentation in R/rating_app.R
 \name{rating_app}
 \alias{rating_app}
-\title{Rating App}
+\title{Airline Safety Rating R Shiny Application}
 \usage{
 rating_app()
 }
